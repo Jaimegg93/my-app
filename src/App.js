@@ -15,11 +15,18 @@ import Ejercicio4ConFiltro from "./components/ejercicios basicos/Ejercicio4ConFi
 import Routers from "./components/noticias/NewsRouter";
 import NewList from "./components/noticias/NewList";
 import ExamenRecuperacion from "./components/examenRecuperacion/pelis";
+import RoutersProductos from "./components/ejemplosWord/routersProductos/routersProductos";
+import Routerss from "./components/ejemplosWord/noticiasProfe/NoticiasRotuer";
+import Carrusel from "./components/componentesBasicos/Carrusel";
+import Tablee from "./components/componentesBasicos/Tablee";
+import Modall from "./components/componentesBasicos/Modall";
+import Accordionn from "./components/componentesBasicos/Accordionn";
+import RoutersContexto from "./components/noticiasConContext/NewsRouter";
 
 function App() {
   return (
     <>
-      <Ejercicio4ConFiltro />
+      <RoutersContexto />
     </>
   );
 }
