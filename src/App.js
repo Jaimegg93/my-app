@@ -2,7 +2,6 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Stack from "react-bootstrap/Stack";
-
 import React from "react";
 import { Button } from "react-bootstrap";
 import { Card } from "react-bootstrap";
@@ -26,7 +25,7 @@ import RoutersContexto from "./components/noticiasConContext/NewsRouter";
 function App() {
   return (
     <>
-      <RoutersContexto />
+      <Carrusel />
     </>
   );
 }
