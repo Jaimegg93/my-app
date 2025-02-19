@@ -11,14 +11,14 @@ import EjercicioBasicoLayout1 from "./components/ejercicios basicos/EjercicioBas
 import EjercicioBasicoLayout2 from "./components/ejercicios basicos/EjercicioBasicoLayout2";
 import EjercicioBasicoLayout3 from "./components/ejercicios basicos/EjercicioBasico3Peliculas";
 import EjercicioBasicoLayout4 from "./components/ejercicios basicos/EjercicioBasico4NavBar";
-import Routers from "./components/routers/routers";
+import Routers from "./components/noticias/NewsRouter";
 import NewList from "./components/noticias/NewList";
 import ExamenRecuperacion from "./components/examenRecuperacion/pelis";
 
 function App() {
   return (
     <>
-      <ExamenRecuperacion />
+      <Routers />
     </>
   );
 }

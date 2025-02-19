@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Card, CardBody, CardHeader, CardText, Container, Row, Col } from "react-bootstrap";
+import { Card, CardBody, CardHeader, CardText, Container, Row, Col, Button } from "react-bootstrap";
+import { Link } from "react-router";
 
 function NewList() {
   const [noticias, setNoticias] = useState([]);
@@ -11,18 +12,13 @@ function NewList() {
   }, []);
 
   return (
-    <Container className="my-5">
+    <Container className="my-5 ">
       <Row>
         {noticias.map((noticia) => (
           <Col md={4}>
             <Card key={noticia.id} className="mb-3">
-              <Card.Header className="bg-warning fw-bold">{noticia.titulo}</Card.Header>
-              <Card.Body>
-                <Card.Text>{noticia.contenido}</Card.Text>
-                <Card.Text>{noticia.categoria}</Card.Text>
-                <Card.Text>{noticia.autor}</Card.Text>
-                <Card.Text>{noticia.fecha}</Card.Text>
-              </Card.Body>
+              <Link to={`/NewsDetail/${noticia.titulo}`} className="btn bg-dark text-white" >
+                <Card.Header className=" fw-bold">{noticia.titulo}</Card.Header></Link>
             </Card>
           </Col>
         ))}
