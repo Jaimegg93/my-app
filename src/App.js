@@ -7,17 +7,18 @@ import React from "react";
 import { Button } from "react-bootstrap";
 import { Card } from "react-bootstrap";
 import { ListGroup, Navbar, Nav, NavDropdown } from "react-bootstrap";
-import EjercicioBasicoLayout1 from "./components/EjercicioBasicoLayout1";
-import EjercicioBasicoLayout2 from "./components/EjercicioBasicoLayout2";
-import EjercicioBasicoLayout3 from "./components/EjercicioBasico3Peliculas";
-import EjercicioBasicoLayout4 from "./components/EjercicioBasico4NavBar";
+import EjercicioBasicoLayout1 from "./components/ejercicios basicos/EjercicioBasicoLayout1";
+import EjercicioBasicoLayout2 from "./components/ejercicios basicos/EjercicioBasicoLayout2";
+import EjercicioBasicoLayout3 from "./components/ejercicios basicos/EjercicioBasico3Peliculas";
+import EjercicioBasicoLayout4 from "./components/ejercicios basicos/EjercicioBasico4NavBar";
 import Routers from "./components/routers/routers";
 import NewList from "./components/noticias/NewList";
+import ExamenRecuperacion from "./components/examenRecuperacion/pelis";
 
 function App() {
   return (
     <>
-      <NewList />
+      <ExamenRecuperacion />
     </>
   );
 }
