@@ -11,6 +11,7 @@ import EjercicioBasicoLayout1 from "./components/ejercicios basicos/EjercicioBas
 import EjercicioBasicoLayout2 from "./components/ejercicios basicos/EjercicioBasicoLayout2";
 import EjercicioBasicoLayout3 from "./components/ejercicios basicos/EjercicioBasico3Peliculas";
 import EjercicioBasicoLayout4 from "./components/ejercicios basicos/EjercicioBasico4NavBar";
+import Ejercicio4ConFiltro from "./components/ejercicios basicos/Ejercicio4ConFiltro";
 import Routers from "./components/noticias/NewsRouter";
 import NewList from "./components/noticias/NewList";
 import ExamenRecuperacion from "./components/examenRecuperacion/pelis";
@@ -18,7 +19,7 @@ import ExamenRecuperacion from "./components/examenRecuperacion/pelis";
 function App() {
   return (
     <>
-      <Routers />
+      <Ejercicio4ConFiltro />
     </>
   );
 }

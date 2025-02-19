@@ -1,15 +1,5 @@
 import React, { act } from "react";
-import {
-  Col,
-  Container,
-  Stack,
-  Row,
-  Card,
-  CardImg,
-  CardHeader,
-  CardBody,
-  CardLink,
-} from "react-bootstrap";
+import { Col, Container, Stack, Row, Card, CardImg, CardHeader, CardBody, CardLink } from "react-bootstrap";
 import { useState, useEffect } from "react";
 
 function EjercicioBasico3Peliculas() {
@@ -19,7 +9,7 @@ function EjercicioBasico3Peliculas() {
   const [peliculaSinopsis, setPeliculaSinopsis] = useState(null);
 
   useEffect(() => {
-    fetch("/peliculas (1).json")
+    fetch("/peliculas.json")
       .then((response) => response.json())
       .then((data) => setPeliculas(data));
   }, []);
@@ -43,11 +33,7 @@ function EjercicioBasico3Peliculas() {
     <Container>
       <Row>
         <Col md={8} className="my-5">
-          <img
-            src={pelicula.foto}
-            alt={pelicula.nombre}
-            style={{ width: "100%", maxHeight: "1000px" }}
-          />
+          <img src={pelicula.foto} alt={pelicula.nombre} style={{ width: "100%", maxHeight: "1000px" }} />
         </Col>
         <Col md={4} className="my-5">
           <h1>{pelicula.titulo}</h1>
@@ -62,11 +48,7 @@ function EjercicioBasico3Peliculas() {
         {peliculas.map((pelicula) => (
           <Col md={4} key={pelicula.id}>
             <Card>
-              <CardImg
-                src={pelicula.foto}
-                alt={pelicula.nombre}
-                style={{ maxHeight: "600px" }}
-              />
+              <CardImg src={pelicula.foto} alt={pelicula.nombre} style={{ maxHeight: "600px" }} />
               <CardHeader>{pelicula.titulo}</CardHeader>
               <CardBody>{pelicula.director}</CardBody>
               <CardBody>Actores:</CardBody>
@@ -75,9 +57,7 @@ function EjercicioBasico3Peliculas() {
                   <li> {actor}</li>
                 ))}
               </ul>
-              {peliculaSinopsis != null &&
-              mostrarSinopsis &&
-              peliculaSinopsis.sinopsis === pelicula.sinopsis ? (
+              {peliculaSinopsis != null && mostrarSinopsis && peliculaSinopsis.sinopsis === pelicula.sinopsis ? (
                 <>
                   <CardHeader className="card-title mt-3 ">Sinopsis</CardHeader>
                   <p className="card-body "> {peliculaSinopsis.sinopsis}</p>
