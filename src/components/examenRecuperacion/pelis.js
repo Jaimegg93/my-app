@@ -4,7 +4,9 @@ import { useState, useEffect } from "react";
 
 function ExamenRecuperacion() {
   const [peliculas, setPeliculas] = useState([]);
+
   const [categorias, setCategorias] = useState(["Comedia", "Thriller", "Drama", "Aventura", "Ciencia Ficción"]);
+
   const [mostrarComentarios, setMostrarComentarios] = useState(false);
   const [peliculaSelecionada, setPeliculaSelecionada] = useState(null);
   const [comentario, setComentario] = useState(0);

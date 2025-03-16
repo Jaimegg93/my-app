@@ -15,5 +15,5 @@ export const MensajesProvider = ({ children }) => {
     return <div>Cargando...</div>;
   }
 
-  return <MensajesContext.Provider value={{ mensajes }}>{children}</MensajesContext.Provider>;
+  return <MensajesContext.Provider value={mensajes}>{children}</MensajesContext.Provider>;
 };

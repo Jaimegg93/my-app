@@ -1,0 +1,11 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^27.0.0"
+  }
+}

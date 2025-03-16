@@ -15,7 +15,7 @@ import React, { useContext, useState } from "react";
 import { MensajesContext } from "./MensajesProvider";
 
 function MensajesList() {
-  const { mensajes } = useContext(MensajesContext);
+  const mensajes = useContext(MensajesContext);
 
   const [contactoSeleccionado, setContactoSeleccionado] = useState(null);
 
