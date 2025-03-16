@@ -6,7 +6,7 @@ import { Card, CardHeader, Container, Button, CardTitle, CardText, CardBody, Col
 import { MensajesContext } from "./MensajesProvider";
 
 function Conversacion() {
-  const { mensajes } = useContext(MensajesContext);
+  const mensajes = useContext(MensajesContext);
   const { nombre } = useParams();
 
   return (
